@@ -7,10 +7,7 @@ const Table1 = require("./Model.js");
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://ganesh:Ganesh2024!@ganesh.nh4x9rr.mongodb.net/Blog?retryWrites=true&w=majority&appName=Ganesh", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-})
+mongoose.connect("mongodb+srv://ganesh:Ganesh2024!@ganesh.nh4x9rr.mongodb.net/Blog?retryWrites=true&w=majority&appName=Ganesh")
 .then(() => {
     console.log("Database connected");
 })
